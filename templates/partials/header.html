@@ -1,0 +1,115 @@
+<header class="main-header clearfix">
+    <div class="main-header__top">
+        <div class="container">
+            <div class="main-header__top-inner">
+                <div class="main-header__top-address">
+                    <ul class="list-unstyled main-header__top-address-list">
+                        <li>
+                            <i class="icon">
+                                <span class="icon-pin"></span>
+                            </i>
+                            <div class="text">
+                                <p>P.º de la Reforma 296, CDMX</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="icon">
+                                <span class="icon-email"></span>
+                            </i>
+                            <div class="text">
+                                <p><a href="mailto:hola@beseguro.mx">hola@beseguro.mx</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-header__top-right">
+<!--                     <div class="main-header__top-menu-box">
+                        <ul class="list-unstyled main-header__top-menu">
+                            <li><a href="{{ url_for('makeaClaimDeath') }}">Make a claim</a></li>
+                            <li><a href="{{ url_for('faq') }}"> FAQs</a></li>
+                            <li><a href="{{ url_for('about') }}">About</a></li>
+                        </ul>
+                    </div> -->
+                    <div class="main-header__top-social-box">
+                        <div class="main-header__top-social">
+                            <a href="http://linkedin.com/company/beseguro" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/BeSeguroMx" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/beseguromx/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@beseguro" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="main-menu clearfix">
+        <div class="main-menu__wrapper clearfix">
+            <div class="container">
+                <div class="main-menu__wrapper-inner clearfix">
+                    <div class="main-menu__left">
+                        <div class="main-menu__logo">
+                            <a href="{{ url_for('index6') }}"><img src="/static/images/resources/logo-1.png" alt=""></a>
+                        </div>
+                        <div class="main-menu__main-menu-box">
+                            <div class="main-menu__main-menu-box-inner">
+                                <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                                <ul class="main-menu__list">
+                                    <li class="is-new-menu">
+                                        <a href="{{ url_for('index6') }}">Inicio</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">Seguros individuales</a>
+                                        <ul>
+                                            <li><a href="{{ url_for('autos') }}">Vehículos</a></li>
+                                            <li><a href="{{ url_for('salud') }}">Gastos Médicos</a></li>
+                                            <li><a href="{{ url_for('autos') }}">Vida</a></li>
+                                            <li><a href="{{ url_for('autos') }}">Hogar</a></li>
+                                            <li><a href="{{ url_for('autos') }}">Viajes</a></li>
+                                            <li><a href="{{ url_for('autos') }}">Planes de Ahorro e Inversión</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">Seguros empresas </a>
+                                        <ul>
+                                            <li><a href="{{ url_for('insurance01') }}">Insurance 01</a></li>
+                                            <li><a href="{{ url_for('insurance02') }}">Insurance 02</a></li>
+                                            <li><a href="{{ url_for('insurance03') }}">Insurance 03</a></li>
+                                            <li><a href="{{ url_for('carInsurance') }}">Car insurance</a></li>
+                                            <li><a href="{{ url_for('lifeInsurance') }}">Life insurance</a></li>
+                                            <li><a href="{{ url_for('homeInsurance') }}">Home insurance</a>
+                                            </li>
+                                            <li><a href="{{ url_for('healthInsurance') }}">Health insurance</a></li>
+                                            <li><a href="{{ url_for('businessInsurance') }}">Business insurance</a></li>
+                                            <li><a href="{{ url_for('fireInsurance') }}">Fire insurance</a></li>
+                                            <li><a href="{{ url_for('marriageInsurance') }}">Marriage insurance</a></li>
+                                            <li><a href="{{ url_for('travelInsurance') }}">Travel insurance</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="{{ url_for('pagos') }}">PAGAR PÓLIZA </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="main-menu__main-menu-box-search-get-quote-btn">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-menu__right">
+                        <div class="main-menu__call">
+                            <div class="main-menu__call-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="main-menu__call-content">
+                                <a href="https://wa.me/5215520022112?text=Hola%2C%20estoy%20interesado%20en%20más%20información.%20Vi%20su%20sitio%20web%20y%20quisiera%20saber%20más." target="_blank">
+                                    +52 55 2002 2112
+                                </a>
+                                <p>Centro de contacto</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

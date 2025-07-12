@@ -1,0 +1,435 @@
+{% extends './layout/layout.html' %}
+
+{% block script %}
+        <script src="/static/js/insur.js"></script>
+{% endblock %} 
+
+{% block content %}
+
+        <!--Insurance Details Start-->
+        <section class="insurance-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="insurance-details__left">
+                            <div class="insurance-details__services-box">
+                                <ul class="insurance-details__services-list list-unstyled">
+                                    <li><a href="{{ url_for('autos') }}">Seguro de Vehículos<span
+                                        class="icon-right-arrow1"></span></a></li>
+                                    <li><a href="{{ url_for('salud') }}">Seguro Gastos Médicos<span
+                                        class="icon-right-arrow1"></span></a></li>
+                                    <li><a href="{{ url_for('vida') }}">Seguro de Vida<span
+                                        class="icon-right-arrow1"></span></a></li>
+                                    <li><a href="{{ url_for('hogar') }}">Seguro de Hogar<span
+                                        class="icon-right-arrow1"></span></a></li>
+                                    <li><a href="{{ url_for('ahorroeinv') }}">Planes de Ahorro e Inversión<span
+                                        class="icon-right-arrow1"></span></a></li>
+                                    <li><a href="{{ url_for('travel') }}">Seguro para Viajes<span
+                                        class="icon-right-arrow1"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="insurance-details__download">
+                                <h3 class="insurance-details__download-title">Recursos</h3>
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div class="insurance-details__download-single">
+                                            <div class="insurance-details__download-icon">
+                                                <span class="insur-three-icon-pdf-file"></span>
+                                            </div>
+                                            <p class="insurance-details__download-mb">3.9KB</p>
+                                            <h3 class="insurance-details__download-title-2"><a href="#">Travel plan &
+                                                    <br> policy</a></h3>
+                                            <div class="insurance-details__download-btn-box">
+                                                <a href="#" class="insurance-details__download-btn thm-btn">Download</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="insurance-details__download-single">
+                                            <div class="insurance-details__download-icon">
+                                                <span class="insur-three-icon-pdf-file"></span>
+                                            </div>
+                                            <p class="insurance-details__download-mb">3.9KB</p>
+                                            <h3 class="insurance-details__download-title-2"><a href="#">Travel plan &
+                                                    <br> policy</a></h3>
+                                            <div class="insurance-details__download-btn-box">
+                                                <a href="#" class="insurance-details__download-btn thm-btn">Download</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="insurance-details__need-help">
+                                <div class="insurance-details__need-help-bg"
+                                    style="background-image: url('/static/images/update-10-02-2023/resources/insurance-details-need-help-bg.jpg')">
+                                </div>
+                                <div class="insurance-details__need-help-icon">
+                                    <span class="insur-three-icon-call"></span>
+                                </div>
+                                <h2 class="insurance-details__need-help-title">Talk to our
+                                    <br> insurance agent</h2>
+                                <div class="insurance-details__need-help-contact">
+                                    <a href="tel:+9200368090">+92 (003) 68-090</a>
+                                    <p>Call to Our Experts</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-7">
+                        <div class="insurance-details__right">
+                            <div class="insurance-details__img-1">
+                                <img src="/static/images/update-10-02-2023/resources/insurance-details-img-3.jpg" alt="">
+                            </div>
+                            <div class="insurance-details__age-box">
+                                <div class="insurance-details__age-title-box">
+                                    <h3 class="insurance-details__age-title">Eligible ages:</h3>
+                                </div>
+                                <ul class="insurance-details__age-list list-unstyled">
+                                    <li>
+                                        <p>Minimum Age: <span>10 Years</span></p>
+                                    </li>
+                                    <li>
+                                        <p>Maximum Age: <span>65 Years</span></p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="insurance-details__text-1">Neque porro est qui dolorem ipsum quia quaed inventore
+                                veritatis et quasi architecto beatae vitae dicta sunt explicabo. Aelltes port lacus quis
+                                enim var sed efficitur turpis gilla sed sit amet finibus eros. Lorem Ipsum is simply
+                                dummy text of the printing and typesetting industry.</p>
+                            <p class="insurance-details__text-2">Biophilia is the idea that humans possess an innate
+                                tendency to seek connections with nature. The term translates</p>
+                            <p class="insurance-details__text-3">When an unknown printer took a galley of type and
+                                scrambled it to make a type specimen book. It has survived not only five centuries, but
+                                also the leap into electronic typesetting, remaining essentially unchanged. Aelltes port
+                                lacus quis enim var sed efficitur turpis gilla sed sit amet finibus eros. Lorem Ipsum is
+                                simply dummy text of the printing and typesetting industry.</p>
+                            <div class="insurance-details__opportunities">
+                                <div class="insurance-details__opportunities-img">
+                                    <img src="/static/images/update-10-02-2023/resources/insurance-details-opportunities-img.jpg"
+                                        alt="">
+                                    <div class="insurance-details__opportunities-hope">
+                                        <p>Hope for the Best,
+                                            <br> Prepare for the Worst</p>
+                                    </div>
+                                </div>
+                                <div class="insurance-details__opportunities-points-box">
+                                    <h3 class="insurance-details__opportunities-points-title">Main features</h3>
+                                    <p class="insurance-details__opportunities-points-text">There are many variations of
+                                        passages of available but the majority have suffered alteration in some form, by
+                                        injected hum randomised words which don't slightly.</p>
+                                    <ul class="insurance-details__opportunities-list list-unstyled">
+                                        <li>
+                                            <div class="icon">
+                                                <span class="fa fa-check"></span>
+                                            </div>
+                                            <div class="text">
+                                                <p>International Plans</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <span class="fa fa-check"></span>
+                                            </div>
+                                            <div class="text">
+                                                <p>Domestic Plans</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <span class="fa fa-check"></span>
+                                            </div>
+                                            <div class="text">
+                                                <p>Student Study Plans</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon">
+                                                <span class="fa fa-check"></span>
+                                            </div>
+                                            <div class="text">
+                                                <p>Specialized Investigations</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Insurance Details End-->
+
+        <!--Requisitos One Start-->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <!-- Columna izquierda: Beneficios -->
+                    <div class="col-xl-8 col-lg-7">
+                        <ul class="insurance-details__points list-unstyled">
+                            <li>
+                                <div class="insurance-details__points-left">
+                                    <div class="insurance-details__points-icon">
+                                        <span class="icon-easy-to-use"></span>
+                                    </div>
+                                    <h3 class="insurance-details__points-title">Procesos eficientes</h3>
+                                </div>
+                                <div class="insurance-details__points-right">
+                                    <p>Nos enfocamos en brindar una atención ágil y oportuna. Nuestro objetivo es resolver <strong>siniestros y reclamaciones</strong> antes de que se cumplan los <strong>niveles de servicio acordados</strong>.</p>
+                                </div>
+                            </li>
+        
+                            <li>
+                                <div class="insurance-details__points-left">
+                                    <div class="insurance-details__points-icon">
+                                        <span class="icon-contract"></span>
+                                    </div>
+                                    <h3 class="insurance-details__points-title">Gestión ágil de reclamaciones</h3>
+                                </div>
+                                <div class="insurance-details__points-right">
+                                    <p>Contamos con un equipo especializado que analiza cada caso de forma personalizada, permitiendo <strong>respuestas rápidas</strong> y soluciones concretas que protegen tus intereses.</p>
+                                </div>
+                            </li>
+        
+                            <li>
+                                <div class="insurance-details__points-left">
+                                    <div class="insurance-details__points-icon">
+                                        <span class="icon-fund"></span>
+                                    </div>
+                                    <h3 class="insurance-details__points-title">Respaldo y seguridad financiera</h3>
+                                </div>
+                                <div class="insurance-details__points-right">
+                                    <p>Operamos bajo las normativas de la <strong>CNSF</strong> y trabajamos exclusivamente con compañías aseguradoras <strong>autorizadas y confiables</strong>, lo que garantiza que tu dinero esté siempre protegido.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <!-- Columna derecha: Requisitos -->
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="insurance-details__need-help">
+                            <div class="insurance-details__need-help-bg"
+                                style="background-image: url('/static/images/update-17-06-2023/backgrounds/main-slider-6-4.jpg')">
+                            </div>
+        
+                            <div class="insurance-details__need-help-icon">
+                                <span class="fa fa-handshake"></span>
+                            </div>
+        
+                            <h2 class="insurance-details__need-help-title">Requisitos </h2>
+        
+                            <ul class="insurance-details__requirements-list list-unstyled" style="text-align: justify;">
+                                <li><p><strong>Edad mínima del conductor:</strong> 18 años</p></li>
+                                <li><p><strong>Antigüedad del vehículo:</strong> Hasta 20 años </p></li>
+                                <li><p><strong>Documentos requeridos:</strong></p>
+                                    <ul>
+                                        <li>Identificación oficial vigente</li>
+                                        <li>Tarjeta de circulación</li>
+                                        <li>Comprobante de domicilio reciente</li>
+                                    </ul>
+                                </li>
+                                <li><p><strong>Tipo de uso del vehículo</strong></p></li>
+                            </ul>
+                            <br>
+                            <p style="font-size: 0.9em;"><strong>*Nota:</strong> La aceptación está sujeta a políticas internas de cada aseguradora y condiciones del vehículo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <!--Requisitos One End-->
+
+        <!--FAQ One Start--> 
+        <section class="faq-one">
+            <div class="container" >
+                <div class="section-title text-center">
+                    <div class="section-sub-title-box">
+                        <p class="section-sub-title">ESTAMOS PARA AYUDAR</p>
+                        <div class="section-title-shape-1">
+                            <img src="/static/images/shapes/section-title-shape-1.png" alt="">
+                        </div>
+                        <div class="section-title-shape-2">
+                            <img src="/static/images/shapes/section-title-shape-2.png" alt="">
+                        </div>
+                    </div>
+                    <h2 class="section-title__title">Preguntas frecuentes</h2>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="faq-one__single">
+                            <div class="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion-1">
+                    
+                                <!-- Pregunta 1 -->
+                                <div class="accrodion active">
+                                    <div class="accrodion-title">
+                                        <h4><span>?</span> ¿Qué NO debo hacer si choqué?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p><strong>No realices ningún arreglo con el otro conductor</strong> hasta que llegue el ajustador de tu aseguradora. Aunque pienses que pudiste tener la culpa, deja que el profesional determine responsabilidades.</p>
+                                            <p><strong>No cambies ni alteres la escena del accidente</strong>, ni intentes modificar quién iba manejando. Esto puede complicar la situación y podría invalidar el apoyo de tu seguro.</p>
+                                            <p><strong>Si el otro vehículo huye</strong>, no lo sigas ni intentes detenerlo. Por tu seguridad, anota toda la información que puedas:</p>
+                                            <ul>
+                                                <li>Placas del vehículo</li>
+                                                <li>Marca y modelo</li>
+                                                <li>Color</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <!-- Pregunta 2 -->
+                                <div class="accrodion">
+                                    <div class="accrodion-title">
+                                        <h4><span>?</span> Choqué, ¿qué hago?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p><strong>Lo primero es mantener la calma.</strong> Verifica si tú o alguien más resultó lesionado. Llama inmediatamente a tu aseguradora y proporciona la siguiente información:</p>
+                                            <ul>
+                                                <li><strong>Número de póliza</strong></li>
+                                                <li><strong>Ubicación exacta del accidente</strong> (usa tu GPS)</li>
+                                                <li><strong>Tu número telefónico</strong></li>
+                                                <li><strong>Marca, tipo, color y placas de tu vehículo</strong></li>
+                                                <li><strong>Nombre del conductor</strong></li>
+                                                <li><strong>Si hay personas lesionadas</strong></li>
+                                            </ul>
+                                            <p><strong>Recomendaciones clave:</strong></p>
+                                            <ul>
+                                                <li>Explica cómo ocurrió el accidente de forma clara y sin exagerar.</li>
+                                                <li>Pide el nombre del ajustador y anota el número de siniestro y la hora de la llamada.</li>
+                                                <li>Si hay heridos, solicita un pase médico al ajustador.</li>
+                                                <li>Si tu coche no puede moverse, el ajustador coordinará el envío de una grúa.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <!-- Pregunta 3 -->
+                                <div class="accrodion last-chiled">
+                                    <div class="accrodion-title">
+                                        <h4><span>?</span> Tuve un accidente y lastimé a alguien, ¡ayuda! ¿Qué hago?</h4>
+                                    </div>
+                                    <div class="accrodion-content">
+                                        <div class="inner">
+                                            <p><strong>Lo primero: mantén la calma.</strong> Verifica el estado de la persona lesionada, pero <strong>no la muevas</strong> bajo ninguna circunstancia. Llama de inmediato a una ambulancia y a tu aseguradora para que envíen a un ajustador.</p>
+                                            <p><strong>Importante:</strong></p>
+                                            <ul>
+                                                <li>No aceptes responsabilidad alguna hasta que llegue el ajustador.</li>
+                                                <li>No toques ni traslades al lesionado; podría empeorar su condición.</li>
+                                                <li>Proporciona información clara al ajustador para facilitar el proceso.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="faq-one__single">
+                          <div class="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion-2">
+                      
+                            <!-- Pérdida Total -->
+                            <div class="accrodion active">
+                              <div class="accrodion-title">
+                                <h4><span>?</span> ¿Qué debo hacer si mi vehículo es pérdida total?</h4>
+                              </div>
+                              <div class="accrodion-content">
+                                <div class="inner">
+                                  <p>
+                                    En caso de una <strong>Pérdida Total por Daños Materiales o Robo Total</strong>, sigue estos pasos para gestionar tu indemnización:
+                                  </p>
+                                  <ul>
+                                    <li>Contacta de inmediato a tu aseguradora y reporta el siniestro.</li>
+                                    <li>Reúne toda la documentación solicitada por la compañía.</li>
+                                    <li>Revisa las <strong>Condiciones Generales</strong> de tu póliza para conocer los requisitos y montos aplicables.</li>
+                                    <li>Espera la resolución y proceso de pago según lo indicado por tu aseguradora.</li>
+                                  </ul>
+                                  <p>
+                                    Recuerda: el tiempo de respuesta y los montos varían dependiendo de la aseguradora y tu tipo de cobertura.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                      
+                            <!-- Robo de vehículo -->
+                            <div class="accrodion">
+                              <div class="accrodion-title">
+                                <h4><span>?</span> ¿Qué hago si me roban el vehículo?</h4>
+                              </div>
+                              <div class="accrodion-content">
+                                <div class="inner">
+                                  <p>
+                                    Si tu auto fue robado, es fundamental actuar con rapidez:
+                                  </p>
+                                  <ul>
+                                    <li>Llama al <strong>911</strong> para reportar el robo a las autoridades.</li>
+                                    <li>Acude a la <strong>Fiscalía</strong> (antes Ministerio Público) y presenta la denuncia.</li>
+                                    <li>Reporta el siniestro a tu aseguradora lo antes posible.</li>
+                                    <li>Solicita y conserva copia certificada de:
+                                      <ul>
+                                        <li>Constancia de denuncia emitida por la Guardia Nacional.</li>
+                                        <li>Constancia de la Policía de Tránsito, Judicial o Municipal.</li>
+                                      </ul>
+                                    </li>
+                                    <li>Ten a la mano la siguiente documentación del vehículo:
+                                      <ul>
+                                        <li>Tipo de unidad</li>
+                                        <li>Marca y modelo</li>
+                                        <li>Año</li>
+                                        <li>Número de serie (VIN)</li>
+                                        <li>Número de motor</li>
+                                        <li>Placas</li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                  <p>
+                                    Tu aseguradora te guiará paso a paso en el proceso de indemnización. Es muy importante presentar todos los documentos correctamente.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                      
+                            <!-- Métodos de pago -->
+                            <div class="accrodion last-chiled">
+                              <div class="accrodion-title">
+                                <h4><span>?</span> ¿Cómo puedo pagar mi póliza?</h4>
+                              </div>
+                              <div class="accrodion-content">
+                                <div class="inner">
+                                  <p>
+                                    Puedes realizar el pago de tu póliza mediante distintas formas:
+                                  </p>
+                                  <ul>
+                                    <li><strong>Domiciliación a tarjeta de crédito o débito</strong> – Ideal para evitar olvidos.</li>
+                                    <li><strong>Promociones con meses sin intereses</strong> – Consulta disponibilidad según tu tarjeta.</li>
+                                    <li><strong>Pago en ventanillas bancarias o tiendas de autoservicio</strong> – Revisa los datos en tu recibo.</li>
+                                  </ul>
+                                  <p>
+                                    Una vez realizado el pago, envíanos tu comprobante para aplicar tu cobertura lo antes posible.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                      
+                </div>
+            </div>
+        
+        <!--FAQ One End-->
+                </div>
+            </div>
+        </section>
+        <!--FAQ One End-->
+
+
+{% endblock content %}
